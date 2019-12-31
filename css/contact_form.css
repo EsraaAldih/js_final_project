@@ -1,0 +1,65 @@
+/* 
+ html{
+    /* font-size: 15px; 
+} */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*-------------------------- Start Global styling ---------------------------*/
+
+.container{
+    /* padding: 8% ; */
+    position: relative;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px !important ;
+   
+}
+a:hover{
+    text-decoration: none;
+
+}
+ul{
+    list-style: none;
+    display: inline-block;
+}
+/*-------------------------- End Global styling ---------------------------*/
+
+
+input {
+    padding: 15px !important;
+    border-radius: 50px !important;
+}
+
+textarea,button{
+    border-radius:20px !important;
+}
+
+label{
+    font-weight: bold;
+}
+button{
+    background-color: #eee !important;
+
+}
+.line{
+    height: 2px !important;
+    background-color: #eee !important;
+    position: relative !important;
+    z-index: 2;
+}
+.line .line{
+    height: 100%;
+    position: absolute;
+    background-color: rgb(235, 193, 6) !important;
+    width: 20% !important;
+    z-index: 3;
+}
+ 
+
