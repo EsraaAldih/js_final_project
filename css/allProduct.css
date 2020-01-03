@@ -1,4 +1,3 @@
-
 :root{
     --main-blue-color:#00f;
     --main-red-color : rgb(177, 14, 14);
@@ -44,7 +43,7 @@ ul{
 
 /*--------------------------- /Global Styling--------------------*/
 
-/* --------------------- Product Styling  --------------------
+/* --------------------- Product in home Styling  --------------------
 #content{ 
     margin-left: 10vh;
     display: flex;
@@ -62,6 +61,10 @@ ul{
     padding-top:20px ;
      */
  
+}
+.product-holder:hover{
+    animation: moving 2s infinite;
+
 }
 .product-holder img{
     width: 300px;
@@ -90,14 +93,17 @@ ul{
     text-align:right;
     text-decoration: none;
     border: none;
-    background-color: transparent;
+    background-color: transparent ;
     box-shadow: none;
     outline-style: none;
+    transition: all ease-in-out .6s;
+    -webkit-transition:   all ease-in-out .6s;
+    -moz-transition:   all ease-in-out .6s;
+    -ms-transition:   all ease-in-out .6s;
+    -o-transition:   all ease-in-out .6s;
   
 }
-.cart_logo{
-transition: ease-in-out all .8s;
-}
+
 .cart_logo i{
     font-size:  24px;
     color: #fff;
@@ -107,9 +113,15 @@ transition: ease-in-out all .8s;
     border-radius: 50%;
     line-height: 50px;
     text-align: center;
+    transition:   all ease-in-out .6s;
+    -webkit-transition:   all ease-in-out .6s;
+    -moz-transition:   all ease-in-out .6s;
+    -ms-transition:   all ease-in-out .6s;
+    -o-transition:   all ease-in-out .6s;
 }
 
-/*--------------------- /Product Styling  --------------------*/
+
+/*--------------------- /Product in home Styling  --------------------*/
 
 
 /*--------------------- pagging Style  --------------------*/
@@ -135,16 +147,26 @@ transition: ease-in-out all .8s;
     width: 45px;
     margin-right:1px;
     height: 100%;
+    transition: all ease-in-out .6s !important;
+    -webkit-transition: all ease-in-out .6s;
+    -moz-transition: all ease-in-out .6s;
+    -ms-transition: all ease-in-out .6s;
+    -o-transition: all ease-in-out .6s;
 
 }
 .pagging li a{
     color:var(--main-black-color);
     text-align: center;
     width: 100%;
-    transition: all.3s ease-out;
     display: inline-block;
     height: 100%;
     font-size: 20px;
+    transition: all ease-in-out .6s !important;
+    -webkit-transition: all ease-in-out .6s;
+    -moz-transition: all ease-in-out .6s;
+    -ms-transition: all ease-in-out .6s;
+    -o-transition: all ease-in-out .6s;
+
 
 }
 .pagging li:hover a{
@@ -160,7 +182,7 @@ transition: ease-in-out all .8s;
 }
 /*--------------------- /Pagging Style  --------------------*/
 
-
+/*------------------- Fixed button in home style ----------------------*/
 .cart h3{
     display: inline-block;
 
@@ -173,22 +195,38 @@ transition: ease-in-out all .8s;
     top: 100px;
     background-color:var(--main-blue-color);
     border: 1px solid #eee;
+    border-bottom: none;
     /* border-radius: 50px; */
     text-align: center;
     color: var(--main-whhite-color);
     font-size: 25px;
     line-height: 50px;
     cursor: pointer;
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out .6s !important;
     border-bottom-left-radius:  50px;
     border-top-left-radius:  50px;
 }
 .cart:hover {
-
-color: #fff;
-background-color: rgb(119, 13, 119);
+color: rgb(16, 5, 75);
+background-color:rgb(150, 150, 223)
 }
 
 .cart_logo:hover  button i{
     background-color: var(--main-blue-color);
+
 }
+
+  /*------------------- /Fixed button in home style ----------------------*/
+
+
+  /*--------------------  Animation product move in home -------------------*/
+ @keyframes moving{
+    0%, 100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+}
+}
+
+  /*------------------------ /Animation product move in home -------------------*/
